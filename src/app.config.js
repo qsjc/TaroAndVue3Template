@@ -34,6 +34,11 @@ export default defineAppConfig({
     uploadFile: 60000,
     downloadFile: 60000
   },
+  requiredPrivateInfos: [
+    "getLocation",
+    "chooseLocation",
+    "chooseAddress"
+  ],
   permission: {
     "scope.userLocation": {
       "desc": "你的位置信息将用于小程序位置接口的效果展示"
